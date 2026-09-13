@@ -13,13 +13,11 @@ export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdde
     } else {
       handleAddStack(stack);
     }
-    // onRemove( stack.id, () => setIsAdded(!isAdded))
-    // // setIsAdded(true)
-    // handleAddStack(stack)
+   
   }
 
   return (
-    <div className="max-w-xs w-full  bg-white rounded-2xl border border-gray-100 shadow-sm p-2">
+    <div className="max-w-xs w-full  bg-white rounded-2xl border border-gray-200 shadow-lg p-2 ">
       {/* Header: icon + badge */}
       <div className="flex items-start justify-between mb-4">
         <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center">

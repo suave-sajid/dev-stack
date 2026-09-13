@@ -2,6 +2,7 @@
 // import { Suspense } from "react";
 import "./App.css";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Navbar from "./components/navbar";
 // import TechStackList from "./components.jsx/TechStackSelector/TechStackList";
 import TechStackSection from "./components/TechStackSection/TechStackSection";
@@ -16,6 +17,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <TechStackSection></TechStackSection>
+      <Footer/>
       {/* <Suspense>
         <TechStackList></TechStackList>
       </Suspense> */}
