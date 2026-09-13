@@ -1,16 +1,46 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+#  DevStack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Explore the Technologies. Build your ideal tech stack, one pick at a time.**
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+##  About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**DevStack** is a personal portfolio and dev-tools web app that helps developers explore popular technologies and build their own custom tech stack. Browse categorized technologies — frontend, backend, and beyond — see quick info like difficulty level and popularity, and add your favorites to build a personalized stack, all in one clean, modern interface.
+
+---
+
+##  Built With
+
+- **React** — Component-based UI library powering the app
+- **Tailwind CSS** — Utility-first styling for a sleek, responsive design
+- **React Toastify** — Toast notifications for smooth user feedback
+
+---
+
+##  Features
+
+###  Curated Technology Explorer
+Browse a categorized collection of frontend, backend, and other technologies — each with a short description, skill level, and rating to help you decide what fits your project.
+
+###  Build Your Own Stack
+Pick one technology per category and watch your personalized "Stack" build up in real time, so you can plan out your ideal tech combination before you start coding.
+
+###  Smooth, Responsive UI
+A polished, gradient-accented interface with instant toast feedback (via React Toastify) makes selecting and managing your stack feel fast and satisfying.
+
+---
+
+
+##  Status
+
+DevStack is an actively evolving personal project, built as part of an ongoing journey into full-stack web development.
+
+
+
+

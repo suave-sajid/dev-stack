@@ -9,7 +9,7 @@ const TechStackSection = () => {
         Explore the <span className={`${BRAND_GRADIENT} bg-clip-text text-transparent`}>Technologies</span>
       </h1>
       <p className="text-xl text-gray-500 text-center mb-10 mx-6 ">Pick one technology per catagory to build your ideal stack</p>
-      <Suspense>
+      <Suspense fallback={'loading....'}>
         <TechStackList></TechStackList>
       </Suspense>{" "}
     </div>
