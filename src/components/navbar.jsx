@@ -63,7 +63,7 @@ function Navbar() {
       </div>
 
       {/* Hamburger button for small screens */}
-      <button onClick={toggleMenu} className="md:hidden">
+      <button onClick={toggleMenu} className="md:hidden cursor-pointer">
         {menuOpen ? (
           <img src={closeButton} alt="Close menu" className="h-8" />
         ) : (
