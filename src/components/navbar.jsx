@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <nav className=" container m-auto sticky top-0 z-50 bg-white shadow-md px-4 py-3 rounded-2xl flex items-center justify-between">
+    <nav className=" container m-auto sticky top-0 z-50 bg-white shadow-md px-4 py-3 rounded-md flex items-center justify-between">
       {/* Logo */}
       <div>
         <img src={logo} alt="Logo" className="h-8" />
