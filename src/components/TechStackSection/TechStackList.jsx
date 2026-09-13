@@ -1,9 +1,9 @@
 import React, { use, useState } from "react";
-import TechnologyCard from "./TechnologyCard ";
+import TechnologyCard from "./TechStackCard ";
 // import StackPanel from "./StackPanel";
 import MyStackPanel from "./MyStackPenel";
 
-const TeckStackDataPromise = fetch("public/techStacks.json").then((response) =>
+const TeckStackDataPromise = fetch("techStacks.json").then((response) =>
   response.json(),
 );
 

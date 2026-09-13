@@ -1,10 +1,10 @@
 // import { useState } from 'react'
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import "./App.css";
-import Banner from "./components.jsx/Banner";
-import Navbar from "./components.jsx/navbar";
-import TechStackList from "./components.jsx/TechStackSelector/TechStackList";
-import TechStackSection from "./components.jsx/TechStackSelector/TechStackSection";
+import Banner from "./components/Banner";
+import Navbar from "./components/navbar";
+// import TechStackList from "./components.jsx/TechStackSelector/TechStackList";
+import TechStackSection from "./components/TechStackSection/TechStackSection";
 
 // One place to control the whole brand gradient
 export const BRAND_GRADIENT =

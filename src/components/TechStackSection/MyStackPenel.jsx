@@ -1,12 +1,5 @@
-
-export default function MyStackPanel({
-  addStack,
-  onRemove,
-  onRemoveAll
-  
-}) {
+export default function MyStackPanel({ addStack, onRemove, onRemoveAll }) {
   return (
-    
     <div className="max-w-xs w-full lg:flex-shrink-0 md:flex-shrink-0 lg:sticky lg:top-18 lg:max-h-[calc(100vh-6rem)] md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] sm:sticky sm:top-20 sm:max-h-[calc(100vh-6rem)]   flex flex-col overflow-y-auto bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
       {/* Header */}
       <h3 className="text-lg font-semibold text-gray-900 mb-1">Your Stack</h3>
@@ -24,9 +17,7 @@ export default function MyStackPanel({
             <div className="flex items-center gap-3">
               <img src={item.icon} alt={item.name} className="w-8 h-8" />
               <div>
-                <p className="text-sm font-medium text-gray-900">
-                  {item.name}
-                </p>
+                <p className="text-sm font-medium text-gray-900">{item.name}</p>
                 <p className="text-xs text-gray-400">{item.category}</p>
               </div>
             </div>
@@ -35,7 +26,7 @@ export default function MyStackPanel({
               className=" cursor-pointer text-gray-300 hover:text-gray-500 transition"
               aria-label={`Remove ${item.name}`}
             >
-             X
+              X
             </button>
           </div>
         ))}

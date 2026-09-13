@@ -1,4 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
+
+import { BRAND_GRADIENT } from "../../App";
 
 export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdded}) {
 
@@ -52,9 +54,12 @@ export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdde
       {/* CTA */}
       <button
         onClick={() => handlleIsAdded()}
-        className="w-full h-11 rounded-xl bg-gray-700 text-white text-sm font-medium hover:bg-gray-800 active:scale-[0.98] transition"
+        disabled={isAdded}
+        className={` w-full h-11 rounded-xl  text-white text-sm font-medium hover:bg-emerald-900 active:scale-[0.98] transition
+          ${isAdded ? 'bg-emerald-700' : BRAND_GRADIENT}
+          `}
       >
-        {isAdded ? "Remove from Stack" : "Add to Stack"}
+        {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );
