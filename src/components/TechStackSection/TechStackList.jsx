@@ -4,9 +4,13 @@ import TechnologyCard from "./TechStackCard ";
 import MyStackPanel from "./MyStackPenel";
 import { toast } from "react-toastify";
 
-const TeckStackDataPromise = fetch("techStacks.json").then((response) =>
-  response.json(),
-);
+const TeckStackDataPromise = fetch("techStacks.json").then((response) => {
+  if (!response.ok) {
+    throw new Error("Failed to load tech stacks");
+  }
+
+  return response.json();
+});
 
 const TechStackList = () => {
     const [addStack, setAddStack] = useState([])
@@ -54,17 +58,15 @@ const TechStackList = () => {
 
   
 
-//   console.log(teckStackData);
-
   return (
     <div  className="w-full max-w-7xl mx-auto px-4">
         
       {/* <h1>Tech Stack Card List section</h1> */}
       <div className="flex flex-col lg:flex-row md:flex-row sm:flex-row gap-4 lg:gap-2 items-start justify-center mx-auto ">
         <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4  w-full lg:flex-1 md:flex-1 min-w-0">
-          {teckStackData.map((stack, index) => (
+          {teckStackData.map((stack) => (
             <TechnologyCard
-                             key={index} 
+                             key={stack.id}
                              stack={stack} 
                              handleAddStack={handleAddStack}
                              onRemove={onRemove}

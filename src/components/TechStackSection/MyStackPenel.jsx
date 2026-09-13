@@ -1,6 +1,6 @@
 export default function MyStackPanel({ addStack, onRemove, onRemoveAll }) {
   return (
-    <div className="max-w-xs w-full lg:flex-shrink-0 md:flex-shrink-0 lg:sticky lg:top-18 lg:max-h-[calc(100vh-6rem)] md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] sm:sticky sm:top-20 sm:max-h-[calc(100vh-6rem)]   flex flex-col overflow-y-auto bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+    <div className="max-w-xs w-full lg:shrink-0 md:shrink-0 lg:sticky lg:top-18 lg:max-h-[calc(100vh-6rem)] md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] sm:sticky sm:top-20 sm:max-h-[calc(100vh-6rem)]   flex flex-col overflow-y-auto bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
       {/* Header */}
       <h3 className="text-lg font-semibold text-gray-900 mb-1">Your Stack</h3>
       <p className="text-sm text-gray-400 mb-5">
@@ -42,7 +42,7 @@ export default function MyStackPanel({ addStack, onRemove, onRemoveAll }) {
       {addStack.length > 0 && (
         <button
           onClick={() => onRemoveAll()}
-          className="w-full h-11 rounded-xl border border-red-200 text-red-500 text-sm font-semibold hover:bg-red-50 active:scale-[0.98] transition"
+          className="w-full h-11 shrink-0 rounded-xl cursor-pointer border border-red-200 text-red-500 text-sm font-semibold hover:bg-red-50 active:scale-[0.98] transition hover:backdrop-blur-8xl"
         >
           Remove All
         </button>

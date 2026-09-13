@@ -64,8 +64,8 @@ export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdde
       <button
         onClick={() => handlleIsAdded()}
         disabled={isAdded}
-        className={` w-full h-11 rounded-xl  text-white text-sm font-medium hover:bg-emerald-900 active:scale-[0.98] transition
-          ${isAdded ? 'bg-emerald-700' : BRAND_GRADIENT}
+        className={` w-full h-11 rounded-xl text-white text-sm font-medium hover:scale-[1.02] hover:shadow-md active:scale-[0.98] transition cursor-pointer
+          ${isAdded ? 'bg-emerald-700 hover:bg-emerald-800' : `${BRAND_GRADIENT} hover:brightness-120`}
           `}
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
