@@ -1,11 +1,14 @@
 // import { useState } from 'react'
 // import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar";
 // import TechStackList from "./components.jsx/TechStackSelector/TechStackList";
 import TechStackSection from "./components/TechStackSection/TechStackSection";
+
 
 // One place to control the whole brand gradient
 export const BRAND_GRADIENT =
@@ -14,6 +17,7 @@ export const BRAND_GRADIENT =
 function App() {
   return (
     <div>
+      <ToastContainer/>
       <Navbar></Navbar>
       <Banner></Banner>
       <TechStackSection></TechStackSection>

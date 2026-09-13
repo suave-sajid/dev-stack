@@ -2,6 +2,7 @@ import React, { use, useState } from "react";
 import TechnologyCard from "./TechStackCard ";
 // import StackPanel from "./StackPanel";
 import MyStackPanel from "./MyStackPenel";
+import { toast } from "react-toastify";
 
 const TeckStackDataPromise = fetch("techStacks.json").then((response) =>
   response.json(),
@@ -29,11 +30,25 @@ const TechStackList = () => {
   const onRemove = (removeId) => {
     const removeStack = addStack.filter( s => s.id !== removeId)
     setAddStack(removeStack)
+          toast.error('Stack Removed', {
+  // position: "bottom-center",
+  autoClose: 2000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+})
     
   }
 
   const onRemoveAll = () => {
   setAddStack([]);
+        toast.error('All Stack Removed', {
+  // position: "bottom-center",
+  autoClose: 2000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+})
 }
 
 

@@ -1,17 +1,26 @@
 // import { useState } from "react";
 
+import { toast } from "react-toastify";
 import { BRAND_GRADIENT } from "../../App";
 
 export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdded}) {
 
-  
 
   const handlleIsAdded = () =>{
 
        if (isAdded) {
       onRemove(stack.id);
+  
     } else {
       handleAddStack(stack);
+
+      toast.success('Added Stack Successfully', {
+  // position: "bottom-center",
+  autoClose: 2000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+})
     }
    
   }
@@ -19,6 +28,8 @@ export default function TechnologyCard({ stack, handleAddStack, onRemove, isAdde
   return (
     <div className="max-w-xs w-full  bg-white rounded-2xl border border-gray-200 shadow-lg p-2 ">
       {/* Header: icon + badge */}
+       
+
       <div className="flex items-start justify-between mb-4">
         <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center">
           <img src={stack.icon} alt={stack.name} className="w-6 h-6" />

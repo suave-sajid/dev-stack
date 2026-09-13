@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-gray-300 shadow-lg flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+      <div className="max-w-6xl mx-auto mt-10 py-6 px-10 border-t border-gray-300 shadow-lg flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400">
         <div className="flex gap-4">
           <a href="#" className="hover:text-gray-600">GitHub</a>
           <a href="#" className="hover:text-gray-600">Twitter</a>
